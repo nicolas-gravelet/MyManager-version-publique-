@@ -17,10 +17,10 @@ Aide à la recherche d'emploi/stage/alternance permettant à l'utilisateur de co
 
 - Rent Manager
 
- Gestion locative axée pour les utilisateurs de plateformes de style Aibnb. Permet de répertorier les informations sur les locataires et leur séjour afin de faciliter certaines démarches (notamment la déclaration de revenus locatifs)
+ Gestion locative axée pour les utilisateurs de plateformes de style Airbnb. Permet de répertorier les informations sur les locataires et leur séjour afin de faciliter certaines démarches (notamment la déclaration de revenus locatifs)
 
 ## Panneau de configuration (en développement)
-Cette application, aujourd'hui en développement, possède également un panneau de configuration composé de parties (pour l'instant)
+Cette application, aujourd'hui en développement, possède également un panneau de configuration composé de 2 parties (pour l'instant)
 
 - Paramètres RentManager
 
