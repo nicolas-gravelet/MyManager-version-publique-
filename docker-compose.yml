@@ -1,0 +1,19 @@
+version: "2"
+services:
+  front:
+    container_name: front
+    network_mode: host
+    build: ./front
+    command: npm run serve
+    ports:
+      - "8080:8080"
+    environment:
+      - VUE_APP_API_PATH
+    
+  back:
+    container_name: back
+    network_mode: host
+    build: ./back
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"

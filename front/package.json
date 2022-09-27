@@ -1,0 +1,61 @@
+{
+  "name": "MyManager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/lang/**/*.json\""
+  },
+  "dependencies": {
+    "@mdi/font": "^7.0.96",
+    "axios": "^0.27.2",
+    "chart.js": "^3.2.1",
+    "core-js": "^3.8.2",
+    "dayjs": "^1.10.4",
+    "google-protobuf": "^3.19.1",
+    "moment": "^2.29.4",
+    "node-sass": "^5.0.0",
+    "oidc-client": "^1.11.5",
+    "vue": "^2.6.12",
+    "vue-html-to-paper": "^1.4.4",
+    "vue-i18n": "^8.22.3",
+    "vue-router": "^3.4.9",
+    "vuetify": "^2.4.0",
+    "vuex": "^3.6.0",
+    "vuex-oidc": "^3.10.1",
+    "vuex-persistedstate": "^4.0.0-beta.3"
+  },
+  "devDependencies": {
+    "@intlify/vue-i18n-loader": "^1.0.0",
+    "@vue/cli-plugin-babel": "^4.5.10",
+    "@vue/cli-plugin-eslint": "^4.5.10",
+    "@vue/cli-plugin-unit-jest": "^4.5.10",
+    "@vue/cli-service": "^4.5.10",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^1.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-i18n": "~2.1.0",
+    "vue-cli-plugin-vuetify": "~2.3.1",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify-loader": "^1.7.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
